@@ -10,7 +10,7 @@ $client = new Client([
 try {
 	$response = $client->request('GET', '/api/v1/notes');
 
-	outputLine('Success');
+	echoLine('Success');
 } catch (\Exception $e) {
-	outputLine('You Are Unarthorized: 401 Returned');
+	echoLine('You Are Unarthorized: 401 Returned');
 }
