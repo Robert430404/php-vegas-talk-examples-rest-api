@@ -5,7 +5,7 @@ This repo is paired with my talk about Lumen and RESTful API's. You can find the
 https://github.com/Robert430404/rc-notes-api.git
 
 This repo contains the example commands used to show case some of the basics of the talk. If you would like to look at them to better
-understand how they work, you can pull this repo down using git, and expiriment with them on your own.
+understand how they work, you can pull this repo down using git, and experiment with them on your own.
 
 ## Looking Through The API
 
@@ -15,21 +15,21 @@ The API is a simple lumen application. I made use of the middleware system for t
 
 to see the enabled modules for lumen. 
 
-If you want to look over the middle ware, you can look in
+If you want to look over the middleware provider, you can look in
 
 	/app/Providers/AuthServiceProvider.php 
 
-and see how I implemented the authentication layer. 
+and see how I implemented the authentication. 
 
-I use an artisan command in order to generate admin users, and there API keys. You can see my logic for the user creation here
+I use an artisan command in order to generate admin users, and there API keys. You can see my logic for the user creation here.
 
 	/app/Console/Commands/MakeAdmin.php
 
-I bound all of the routes using namespacing for the API, you can look through the route definitions here
+I bound all of the routes using namespacing for the API, you can look through the route definitions here.
 
 	/routes/web.php
 
-you'll notice that the URI stays the same through out the routes, but the protocol changes based upon request type. If you look in the corresponding controllers, you can see the different logic that applies to each HTTP method.
+You'll notice that the URI stays the same through out the routes, but the protocol changes based upon request type. If you look in the corresponding controllers, you can see the different logic that applies to each HTTP method.
 
 The controllers are located here
 
@@ -91,7 +91,7 @@ Then just change directory into the public folder and run this to start the deve
 
 You will now need to clone down this repository
 
-	git clonet https://github.com/Robert430404/php-vegas-talk-examples-rest-api.git
+	git clone https://github.com/Robert430404/php-vegas-talk-examples-rest-api.git
 
 You will then change directory into the new exmple directory.
 
