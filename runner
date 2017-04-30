@@ -4,12 +4,33 @@ include 'config.php';
 include 'vendor/autoload.php';
 
 /**
+ * Helper Function To var_dump response
+ */
+function outputLine($line)
+{
+	echo "\r\n";
+	var_dump($line);
+	echo "\r\n";
+}
+
+/**
+ * Helper function to echo line
+ */
+function echoLine($line)
+{
+	echo "\r\n";
+	print($line);
+	echo "\r\n\r\n";
+}
+
+/**
  * Registered Commands
  */
 $commands = [
 	'non-auth' => 'demos/non-auth.php',
 	'yes-auth' => 'demos/yes-auth.php',
 	'show-key' => 'demos/show-key.php',
+	'list' => 'demos/list.php',
 ];
 
 /**
@@ -17,8 +38,11 @@ $commands = [
  */
 $command = $argv[1];
 
+/**
+ * Runs command or echos error
+ */
 if (isset($commands[$command])) {
 	include $commands[$command];
 } else {
-	echo "Command Not Found \r\n";
+	echoLine('Command Not Found');
 }
