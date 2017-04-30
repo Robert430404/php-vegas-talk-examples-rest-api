@@ -1,0 +1,14 @@
+{
+    "name": "robertcox/php-vegas-talk-examples-rest-api",
+    "description": "These are the examples for my REST talk",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Robert Cox",
+            "email": "robert@studiorclv.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}

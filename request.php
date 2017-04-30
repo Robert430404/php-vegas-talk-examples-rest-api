@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 
+ * This class is responsible for sending the requests to the api.
  */
 class Request
 {
@@ -16,6 +16,11 @@ class Request
 	private $url;
 
 	/**
+	 * @var array
+	 */
+	private $options;
+
+	/**
 	 * Request Constructor
 	 * 
 	 * @param $apikey  string
@@ -27,15 +32,12 @@ class Request
 		string $url,
 		array  $options
 	) {
-		$this->apikey = $apikey;
+		$this->apikey  = $apikey;
+		$this->url     = $url;
+		$this->options = $options;
 	}
 
 	public function sendRequest()
-	{
-
-	}
-
-	private function setupCurl()
 	{
 
 	}
