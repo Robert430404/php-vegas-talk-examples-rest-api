@@ -1,5 +1,9 @@
 # Hello PHP Vegas
 
+Slides for this talk can be found here: 
+
+https://docs.google.com/presentation/d/1zscpQEJL6PGqXJ-B6z53EpJSu2DSISbxJ_CvNjM6ZTA/edit?usp=sharing
+
 This repo is paired with my talk about Lumen and RESTful API's. You can find the repository for the API here.
 
 https://github.com/Robert430404/rc-notes-api.git
