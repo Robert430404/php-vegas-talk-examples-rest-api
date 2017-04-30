@@ -1,1 +1,24 @@
-runner
+<?php
+
+include 'config.php';
+include 'vendor/autoload.php';
+
+/**
+ * Registered Commands
+ */
+$commands = [
+	'non-auth' => 'demos/non-auth.php',
+	'yes-auth' => 'demos/yes-auth.php',
+	'show-key' => 'demos/show-key.php',
+];
+
+/**
+ * This is the called command
+ */
+$command = $argv[1];
+
+if (isset($commands[$command])) {
+	include $commands[$command];
+} else {
+	echo "Command Not Found \r\n";
+}
