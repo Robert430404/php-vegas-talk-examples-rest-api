@@ -27,10 +27,13 @@ function echoLine($line)
  * Registered Commands
  */
 $commands = [
-	'non-auth' => 'demos/non-auth.php',
-	'yes-auth' => 'demos/yes-auth.php',
-	'show-key' => 'demos/show-key.php',
-	'list' => 'demos/list.php',
+	'nonauth' => 'demos/non-auth.php',
+	'get'     => 'demos/get.php',
+	'put'     => 'demos/put.php',
+	'post'    => 'demos/post.php',
+	'update'  => 'demos/update.php',
+	'delete'  => 'demos/delete.php',
+	'list'    => 'demos/list.php',
 ];
 
 /**
