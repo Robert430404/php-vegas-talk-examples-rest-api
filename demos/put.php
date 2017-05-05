@@ -6,8 +6,7 @@ $client = new Client([
 	'base_uri'    => 'http://localhost:8989',
 	'timeout'     => 2.0,
 	'form_params' => [
-		'id'      => 6,
-		'name'    => 'Updated CMD Line Note',
+		'name'    => 'CMD Line Note',
 		'content' => 'This is the content from the command line note',
 		'type'    => 1
 	],
@@ -17,7 +16,7 @@ $client = new Client([
 ]);
 
 try {
-	$response = $client->request('DELETE', '/api/v1/notes');
+	$response = $client->request('PUT', '/api/v1/notes');
 	$array    = json_decode($response->getBody());
 
 	outputLine($array);

@@ -17,7 +17,7 @@ $client = new Client([
 ]);
 
 try {
-	$response = $client->request('DELETE', '/api/v1/notes');
+	$response = $client->request('PATCH', '/api/v1/notes');
 	$array    = json_decode($response->getBody());
 
 	outputLine($array);

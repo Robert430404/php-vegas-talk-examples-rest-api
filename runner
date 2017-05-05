@@ -31,7 +31,7 @@ $commands = [
 	'get'     => 'demos/get.php',
 	'put'     => 'demos/put.php',
 	'post'    => 'demos/post.php',
-	'update'  => 'demos/update.php',
+	'patch'   => 'demos/patch.php',
 	'delete'  => 'demos/delete.php',
 	'list'    => 'demos/list.php',
 ];
